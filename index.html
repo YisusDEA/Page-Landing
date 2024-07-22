@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Girl</title>
+
+    <style>
+        body {
+            font-family: monospace;
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav button{
+            border-style: none;
+            background-color: #96BB7C;
+            border-style: none;                                                                                             
+            color: white;
+            background-color:#96BB7C;
+            font-size: 14px;
+            padding: 1%;
+            border-radius: 5px;
+            
+        }
+        .login {
+            color: #96BB7C;
+        }
+
+    
+
+
+        .container {
+            
+            height: 777px;
+            padding: 95px 0px 0px 0px;
+            gap: 40px;
+            background-color: #DDF4FF;
+
+            display: flex;
+
+        }
+
+        .title span{
+            color: #57C192;
+            font-size: 16px;
+        }
+        .title h1 {
+            font-size: 56px;
+        }
+        .title p {
+            font-size: 20px;
+            color: #737373;
+        }
+
+       
+        .body-title .get {
+            border-style: none;                                                                                             
+            color: white;
+            background-color:#96BB7C;
+            font-size: 14px;
+            padding: 2%;
+            border-radius: 5px;
+        }
+        .container-title {
+            width: 573px;
+            height: 386px;
+            margin: auto;
+            margin-left: 20%;
+
+        }
+
+        .learn {
+            border-style: none;     
+            border: 2px solid #96BB7C;                                                                                        
+            color: #96BB7C;
+            background-color: #DDF4FF;
+            font-size: 14px;
+            padding: 2%;
+            border-radius: 5px;
+        }
+
+        .container-img {
+            position: absolute;
+            top: 20vw;
+            left: 60vw;
+            bottom: 0;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .span-dental {
+            font-weight: bold;
+            color: #57C192;
+        }
+
+        .girl-img {
+            position: relative;
+            z-index: 20;
+        }
+
+        .girl-icons{
+            top: 0;
+            position: absolute;
+            z-index: 1;
+        }
+        
+
+        .circulo {
+            position: absolute;
+            left: 0;
+            top: 40%;
+        }
+
+        .stat-1 {
+            position: absolute;
+            top: 10vw;
+            z-index: 30;
+            
+        }
+
+        .stat-2 {
+            position: absolute;
+            z-index: 40;
+            justify-content: end;
+            top: 200%;
+        }
+
+
+        .stats{
+        height: 264px;
+        top: 777px;
+        background-color: #FFFFFF;
+        }
+
+
+        .numbers {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5rem;
+        }
+
+        .numbers span{
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color:#96BB7C;
+            font-size: 58px;
+        }
+
+        .words p {
+            margin: auto;
+            display: inline;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bolder;
+        }
+
+        .container-cards {
+            height: 718px;
+            top: 1041px;
+            align-items: center;
+            justify-content: center;
+            display: grid;
+            background-color: #FFF2F3;
+            gap: 15%;
+        }
+
+        .cards-header {
+            font-size: 40px;
+        }
+
+        .cards {
+            margin: auto;
+            display: flex;
+            gap: 10rem;
+            height: 718px;
+            left: 195px;
+        }
+
+        .card-bag,.card-book1,.card-book2 {
+            width: 328px;
+            height: 268px;
+            background-color: #FFFFFF;
+            box-shadow: 0px 5px 4px 1px rgba(0, 0, 0, 0.1);
+        }
+        .p-info {
+            font-size: 14px;
+            color: #737373;
+        }
+
+        .span-title{
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .icon {
+            width: 72px;
+            height: 72px;
+        }
+        .info-card1,.info-card2,.info-card3 {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 230px;
+            width: 288;
+            justify-content: space-between;
+        }
+        
+        footer {
+            height: 74px;
+            top: 1759px;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer p {
+            color:#737373;
+            font-weight: bold;
+        }
+
+        .footer-content{
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            
+            align-items: center;
+            padding: 1%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span><strong>Logo</strong></span>
+            <span class="login">login</span>
+            <button class="join">JOIN US ></button>
+        </nav>  
+
+    </header>
+
+    <section class="container">
+        <section class="container-title">
+                <section class="title">
+                    <span class="span-dental">Best dental surgeons</span>
+                    <h1>25K+ STUDENTS TRUST US</h1>
+                    <p>Our goal is to make online education work for everyone</p>
+                </section>
+
+                <section class="body-title">
+                    <button class="get">Get Quote Now</button>
+                    <button class="learn">Learn More</button>
+                </section>
+        </section>
+
+        <section class="container-img">
+                <section class="img-girl">
+                    <img src="girl/technology 1.png" alt="" class="girl-img">
+                    <section class="girl-icons">
+                        <img src="girl/image 10.png" alt="" class="stat-1">
+                        <img src="girl/image 5.png" alt="" class="stat-2">
+                        <img src="girl/image 2.png" alt="" class="stat-3">
+                        <img src="girl/circulo.png" alt="" class="circulo">
+                    </section>
+
+                </section>
+        </section>
+    </section>
+
+
+    <section class="stats">
+        <div class="numbers">
+            <span>15K</span>
+            <span>150K</span>
+            <span>15</span>
+            <span>100+</span>
+
+
+        </div>
+        <section class="words">
+            <p>Happy Customers</p>
+            <p>Monthly Visitors</p>
+            <p>Countries Worldwide</p>
+            <p>Top Partners</p>
+        </section>
+        
+    </section>
+
+    <section class="container-cards">
+
+        <section class="cards-header">
+            <h2>Get Quality Education</h2>
+        </section>
+
+        <section class="cards">
+            <section class="card-bag">
+                <section class="info-card1">
+                    <img src="icons/bag.png" alt="" class="icon">
+                    <span class="span-title">Lifetime access</span>
+                    <p class="p-info">The gradualaccumulation of 
+                        information about </p>
+                </section>
+            </section>
+
+            <section class="card-book1">
+                <section class="info-card2">
+                    <img src="icons/book.png" alt="" class="icon">
+                    <span class="span-title">Training Courses</span>
+                    <p class="p-info">The gradual accumulation of 
+                        information about </p>
+                </section>
+            </section>
+
+            <section class="card-book2">
+                <section class="info-card3">
+                    <img src="icons/book-open.png" alt="" class="icon">
+                    <span class="span-title">Training Courses</span>
+                    <p class="p-info">The gradual accumulation of 
+                        information about </p>
+                </section>
+            </section>
+        </section>
+    </section>
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <p>Made With Love By Figmaland All Right Reserved </p>
+
+            <img src="footer/socialmedia.png" alt="foot-img" class="foot-img">
+        </div>
+
+    </footer>
+</body>
+</html>
